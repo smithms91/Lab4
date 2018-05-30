@@ -1,22 +1,19 @@
 "use strict";
 
 function ProfileService() {
-    let newProfile = {};
+    let user = {};
 
     const getUserProfile = () => {
-        return newProfile;
-    }
-
-    const profile = (user) => {
         return user;
     }
 
     const setUserProfile = (name, email, bio) => {
-        newProfile = {
+        user = {
             name: name,
             email: email,
             bio: bio
         }
+
     }
 
     return {
